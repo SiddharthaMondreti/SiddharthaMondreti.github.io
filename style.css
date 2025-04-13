@@ -1,0 +1,117 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Photo + Quote Section */
+.quote-photo-section {
+  text-align: center;
+  background: #e3f2fd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #1976d2;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #0d47a1;
+}
+
+/* Menu Bar */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background: #bbdefb;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0d47a1;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #1565c0;
+}
+
+/* Clock Section */
+.clocks {
+  background: #ede7f6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4a148c;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.date-display {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timezones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Main Sections */
+.main-sections {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2 {
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+}

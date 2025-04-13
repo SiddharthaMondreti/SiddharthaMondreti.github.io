@@ -1,114 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav {
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 0.5em 0;
-        }
-
-        nav a {
-            margin: 0 1em;
-            text-decoration: none;
-            color: #333;
-        }
-
-        section {
-            padding: 2em;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .project {
-            border: 1px solid #ddd;
-            padding: 1em;
-            margin-bottom: 1em;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        .profile-picture {
-            border-radius: 50%; /* Makes the image a circle */
-            width: 150px; /* Adjust size as needed */
-            height: 150px;
-            object-fit: cover; /* Prevents distortion */
-            margin-bottom: 20px;
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddhartha Mondreti | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-    <header>
-        <img src="your-profile-picture.jpg" alt="Your Profile Picture" class="profile-picture">
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | [Your Other Skills]</p>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Write a brief introduction about yourself. Include your skills, experience, and what you are passionate about.
-            For example: I'm a passionate web developer with experience in building responsive and user-friendly websites. I enjoy learning new technologies and solving complex problems.
-        </p>
+  <div class="container">
+    
+    <!-- Quote and Photo Section -->
+    <section class="quote-photo-section">
+      <img src="https://i.pinimg.com/originals/64/88/89/64888979fa4f03e8f5575f269fa5f1cc.jpg" alt="Siddhartha's Photo" class="profile-img" />
+      <div class="quote">“The only way to do great work is to love what you do.”</div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <!-- Menu Bar -->
+    <nav class="menu">
+      <a href="about.html">About</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="experience.html">Work Experience</a>
+      <a href="projects.html">Latest Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-        <div class="project">
-            <h3>Project 1: [Project Name]</h3>
-            <p>Description of the project. Include technologies used and your role.</p>
-            <a href="[Link to Project 1 (e.g., GitHub, live demo)]" target="_blank">View Project</a>
-        </div>
+    <!-- Date & Clock Section -->
+    <section class="clocks">
+      <div class="timezones">
+        <div id="clock-mumbai"></div>
+        <div id="clock-sf"></div>
+      </div>
+    </section>
+    
 
-        <div class="project">
-            <h3>Project 2: [Project Name]</h3>
-            <p>Description of the project. Include technologies used and your role.</p>
-            <a href="[Link to Project 2]" target="_blank">View Project</a>
-        </div>
+    <!-- Main Sections -->
+    <section class="main-sections">
+      <!-- Trending -->
+      <div class="card" id="trending">
+        <h2>Trending</h2>
+        <ul id="news-list">
+          <li>AI will surpass 1 trillion parameters in next-gen models.</li>
+          <li>Markets rally as Fed signals pause on rate hikes.</li>
+          <li>Apple unveils new M3 chip at Tech World Expo.</li>
+        </ul>
+      </div>
 
-        </section>
+      <!-- Stocks to Watch -->
+      <div class="card" id="stocks">
+        <h2>Stocks to Watch</h2>
+        <ul id="stock-list">
+          <li>NIFTY: 22,300 ▲</li>
+          <li>SENSEX: 73,400 ▲</li>
+          <li>NASDAQ: 15,800 ▼</li>
+        </ul>
+      </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">linkedin.com/in/yourprofile</a></p>
-        </section>
-
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
-
+      <!-- Fun Facts -->
+      <div class="card" id="fun-facts">
+        <h2>Fun Facts</h2>
+        <ul id="facts-list">
+          <li>Bananas are berries, but strawberries aren't.</li>
+          <li>The Eiffel Tower can grow more than 6 inches in summer.</li>
+          <li>Octopuses have three hearts.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
